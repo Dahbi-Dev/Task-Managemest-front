@@ -21,7 +21,7 @@ const EditProject = ({  projectId: propProjectId }) => {
   const [initialLoading, setInitialLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_BASE_URL = 'http://localhost:5000'; // Adjust this to your Flask API URL
+  const API_BASE_URL = import.meta.env.VITE_API_URL; 
   
   const getAuthToken = () => {
     return localStorage.getItem('token');

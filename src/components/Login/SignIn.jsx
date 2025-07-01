@@ -4,7 +4,7 @@ import { User, LogOut, Plus, Edit, Trash2, Save, X, Menu, Home, FolderOpen, Chec
 import { Link } from 'react-router-dom';
 
 // API base URL - adjust this to match your Flask server
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // Sign In Component
 const SignIn = ({ onLogin, onNavigateToSignUp }) => {

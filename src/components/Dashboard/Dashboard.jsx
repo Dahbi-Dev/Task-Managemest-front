@@ -3,7 +3,7 @@ import { User, LogOut, Plus, Edit, Trash2, Save, X, Menu, Home, FolderOpen, Chec
 import { Link } from 'react-router-dom';
 
 // API configuration
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // Helper function to get token from localStorage
 const getAuthToken = () => {

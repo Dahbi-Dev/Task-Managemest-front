@@ -23,7 +23,7 @@ const userId = user?.id;
 
   const navigate = useNavigate();  
 
-  const API_BASE_URL = 'http://localhost:5000'; // Adjust this to your Flask API URL
+  const API_BASE_URL = import.meta.env.VITE_API_URL; // Adjust this to your Flask API URL
   const getAuthToken = () => {
   return localStorage.getItem('token');
 };
